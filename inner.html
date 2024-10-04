@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form action="" style="margin-left: 40%; background-color: rgb(160, 72, 72); margin-right: 28%; margin-top: 10%;">
+        <h2 style="margin-left: 120px; color: white; font-family: cursive;">Age Checker</h2>
+        <input id="age" type="text" style="width: 300px; margin-left: 60px; margin-top: 5px;">
+        <br><br>
+        <button type="button" onclick="clicking()" class="btn btn-primary" style="margin-left: 45%; margin-bottom: 10px;">Check</button>
+        <div id="p">
+
+        </div>
+    </form>
+
+    <script>
+        function clicking(){
+                let check=document.getElementById('age').value
+                console.log(check);
+                if(check>=18){
+                    data=`<p class="text-light">You are eligible to vote</p>`
+                }
+                else{
+                    data=`<p class="text-light">You are not eligible to vote</p>`
+                } 
+                p.innerHTML=data
+        }
+        
+    </script>
+</body>
+</html>
